@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --gray: #464646;
+    --blue: #2A7AE4;
+    --blueC: #EAF2FD;
+    --grayC: #EDEDED;
+    --white: #fff;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px ;
+}
+
+body {
+    background-color: var(--grayC);
+}
+main{
+    margin-top: 50px;
+}
+.caja-tipografica {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.mb-2 {
+    margin-bottom: 20px;
+}
+
+/* ****************
+HEADER INICIO
+********************* */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.1);
+    /* Fondo semitransparente */
+    backdrop-filter: blur(10px);
+    /* Efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px);
+    /* Para compatibilidad con Safari */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+header ul li a {
+    color: var(--gray);
+    text-decoration: none;
+    height: 100%;
+    padding: 20px 10px;
+    display: inline-block;
+
+}
+
+header .caja-tipografica {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    /* gap: 20px; */
+}
+
+header ul li {
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+
+header ul li:hover {
+    background-color: var(--gray);
+}
+
+header ul li:hover a {
+    color: var(--grayC);
+}
+
+/* ****************
+HEADER FIN
+********************* */
+
+
+
+
+.section {
+    padding: 50px 0;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+
+/* ****************
+SECTION INFO INICIO
+********************* */
+.section-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-info .info {
+    width: 70%;
+    padding: 0 20px;
+}
+
+.section-info .content-image {
+    width: 30%;
+    padding: 0 20px;
+}
+
+.section-info .content-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.section-info p {
+    font-size: 1.1rem;
+
+}
+
+.section-info ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.section-info ul li {
+    width: 99px;
+}
+
+
+.section-info ul a {
+    color: var(--gray);
+    text-decoration: none;
+}
+
+.section-info ul a:hover {
+    font-weight: 600;
+}
+
+.section-info ul a i {
+    color: var(--blue);
+    transition: transform 0.3s ease-in-out allow-discrete;
+}
+
+.section-info ul a:hover i {
+    transform: scale(1.2);
+}
+
+/* ****************
+SECTION INFO FIN
+********************* */
+
+
+/* ****************
+SECTION SOBRE MI INICIO
+********************* */
+
+.section-sobremi {
+    background-color: var(--blueC);
+}
+
+/* ****************
+SECTION SOBRE MI FIN
+********************* */
+
+/* ****************
+SECTION SKILLS INICIO
+********************* */
+.skills {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.skill {
+    width: 12%;
+    background-color: var(--white);
+    padding: 13px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    aspect-ratio: 1 / 1;
+    align-items: start;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+
+}
+
+.skill i {
+    font-size: 2rem;
+    color: var(--blue);
+    margin-bottom: 5px;
+
+}
+
+.skill span {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gray);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+
+/* ****************
+SECTION SKILLS FIN
+********************* */
+
+
+
+/* ****************
+SECTION FORMACION INICIO
+********************* */
+.section-formacion {
+    background-color: var(--blueC);
+}
+
+.formaciones {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+    justify-content: space-between;
+}
+
+.formacion {
+    width: 33%;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.formacion img {
+    width: 100%;
+    object-fit: contain;
+    background-color: var(--white);
+
+    height: 190px;
+    padding: 30px;
+
+    display: block;
+    margin: 0 auto;
+}
+
+.formacion .titulo {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gray);
+    margin-bottom: 5px;
+}
+
+.formacion .fecha {
+    font-size: 14px;
+    color: var(--gray);
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+/* ****************
+SECTION FORMACION FIN
+********************* */
+
+
+/* ****************
+SECTIOPN CONTACTO INICIO
+********************* */
+.contenedor-contacto {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+
+}
+
+.contenedor-contacto .content-image {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.contenedor-contacto .content-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.contenedor-contacto .contenedor-formulario {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.form {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form .btn-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.form .btn {
+    padding: 10px 20px;
+    font-size: 15px;
+
+    border-radius: 0px;
+    border: none;
+    background: var(--blue);
+    color: #fff;
+    font-weight: bolder;
+    transition: all 0.2s ease;
+
+}
+
+.form .btn:hover {
+    background: #0034de;
+    cursor: pointer;
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field label {
+    position: absolute;
+    color: #8d8d8d;
+    pointer-events: none;
+    background-color: transparent;
+    left: 15px;
+    transform: translateY(0.6rem);
+    transition: all 0.3s ease;
+}
+
+.input-field input,
+.input-field textarea {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 0px;
+    border: solid 1px #8d8d8d;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.input-field input:focus,
+.input-field input:valid,
+.input-field textarea:focus,
+.input-field textarea:valid {
+    outline: none;
+    border: solid 1px #0034de;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label,
+.input-field textarea:focus~label,
+.input-field textarea:valid~label {
+    transform: translateY(-51%) translateX(-10px) scale(0.8);
+    background-color: #fff;
+    padding: 0px 5px;
+    color: #0034de;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 0px;
+}
+
+.form .passicon {
+    cursor: pointer;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 6px;
+    right: 8px;
+}
+
+.form .close {
+    display: none;
+}
+
+/* ****************
+SECTIOPN CONTACTO FIN
+********************* */
+
+/* ****************
+FOOTER INICIO
+********************* */
+footer {
+    background-color: var(--white);
+    padding: 20px 0;
+    text-align: center;
+    color: var(--gray);
+
+}
+
+
+footer a {
+    color: var(--gray);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: var(--blue);
+}
+
+/* ****************
+FOOTER FIN
+********************* */

@@ -1,0 +1,82 @@
+@media(width <=900px) {
+    header {
+        display: none;
+    }
+}
+
+@media(width <=800px) {
+
+    .skills {
+        justify-content: center;
+    }
+
+    .skill {
+        width: 20%;
+    }
+}
+
+@media(width <=765px) {
+    main {
+        margin-top: 0px;
+    }
+
+    .caja-tipografica {
+        padding: 0 5px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+
+    .section-info {
+        display: grid;
+
+    }
+
+    .section-info p {
+        text-wrap: pretty;
+    }
+
+    .section-info .info {
+        order: 2;
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .section-info .content-image {
+        order: 1;
+        width: 100%;
+    }
+
+    .section-info ul li {
+        width: auto;
+        font-size: 15px;
+
+    }
+    .skill {
+        width: 26%;
+    }
+    .formaciones{
+        justify-content: center;
+    }
+    .formacion{
+        width: 48%;
+    }
+    .formacion img{
+        height: 130px;
+    }
+    .contenedor-contacto .content-image{
+        display: none;
+    }
+    .contenedor-contacto .contenedor-formulario{
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+    }
+    .form .btn-container{
+        justify-content: center;
+    }
+}
